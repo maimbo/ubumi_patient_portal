@@ -1,0 +1,130 @@
+{
+  "user": {
+    "id": "1",
+    "name": "Steven Chiluba",
+    "email": "steven.chiluba@example.com",
+    "profile_image": "https://via.placeholder.com/40"
+  },
+  "appointments": [
+    {
+      "id": "1",
+      "provider_name": "Bennet Entersilokaz",
+      "date": "2024-03-17",
+      "time": "10:00 AM",
+      "reason": "General practice",
+      "location": "Suite 405, Level 4/38 Edward St, Sydney",
+      "status": "upcoming"
+    }
+  ],
+  "recent_activity": [
+    {
+      "id": "1",
+      "type": "condition_update",
+      "provider": "Dr Bennet Entersilokaz",
+      "description": "Added two new conditions to your health record",
+      "date": "2024-03-09"
+    },
+    {
+      "id": "2",
+      "type": "benefit_payment",
+      "provider": "Medicare",
+      "description": "Sent a benefit of $122.44",
+      "reference": "3085",
+      "date": "2024-03-08"
+    }
+  ],
+  "medications": [
+    {
+      "id": "1",
+      "name": "Fenofibrate",
+      "dosage": "48mg",
+      "instructions": "Take 1 tablet every morning",
+      "last_refill": "2024-02-20"
+    },
+    {
+      "id": "2",
+      "name": "Alfuzosin",
+      "dosage": "10mg",
+      "instructions": "Take 1 tablet before bed and avoid drinking alcohol for 2 hours after",
+      "last_refill": "2024-02-20"
+    },
+    {
+      "id": "3",
+      "name": "Dexamethasone",
+      "dosage": "4mg",
+      "instructions": "Take 3 tablets, 3 times a day for 7 days",
+      "last_refill": "2024-02-20"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "1",
+      "name": "Sinusitis",
+      "status": "active",
+      "description": "A condition in which the cavities around the nasal passages become inflamed",
+      "diagnosed_date": "2024-03-05",
+      "diagnosed_by": "Dr Steven Kalish"
+    }
+  ],
+  "recent_bills": [
+    {
+      "id": "1",
+      "amount": 110.00,
+      "provider": "Devon MacPhy Ltd",
+      "date": "2024-03-01",
+      "status": "paid"
+    },
+    {
+      "id": "2",
+      "amount": 124.00,
+      "provider": "Medicare",
+      "date": "2024-03-05",
+      "status": "processed"
+    },
+    {
+      "id": "3",
+      "amount": 214.00,
+      "provider": "Dr Perry Anastas Dorian",
+      "date": "2024-03-07",
+      "status": "pending"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "type": "covid_alert",
+      "title": "New COVID-19 update for patients",
+      "message": "All patients that have not received their COVID-19 will need to ensure they stay isolated for a minimum of 14 days.",
+      "date": "2024-03-10"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "sender_name": "Dr. Bennet Entersilokaz",
+      "subject": "Follow-up on your recent visit",
+      "snippet": "Just wanted to check in and see how you are feeling after our last appointment...",
+      "date": "2024-03-15",
+      "read": false,
+      "sender_image": "https://via.placeholder.com/40"
+    },
+    {
+      "id": "2",
+      "sender_name": "Clinic Admin",
+      "subject": "Appointment Reminder",
+      "snippet": "This is a friendly reminder for your upcoming appointment on March 17th...",
+      "date": "2024-03-14",
+      "read": true,
+      "sender_image": "https://via.placeholder.com/40"
+    },
+    {
+      "id": "3",
+      "sender_name": "Support Team",
+      "subject": "Welcome to Healer Patient Portal",
+      "snippet": "We are excited to have you on board. Explore your health information securely...",
+      "date": "2024-03-10",
+      "read": true,
+      "sender_image": "https://via.placeholder.com/40"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "pageTitle": "Provider Login",
+  "formLabels": {
+    "providerId": "Provider ID",
+    "email": "Email Address",
+    "password": "Password"
+  }
+}

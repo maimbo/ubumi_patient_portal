@@ -1,0 +1,13 @@
+{
+  "pageTitle": "Register",
+  "formLabels": {
+    "fullName": "Full Name",
+    "dob": "Date of Birth",
+    "gender": "Gender",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "nhima": "NHIMA Number",
+    "password": "Password",
+    "confirmPassword": "Confirm Password"
+  }
+}

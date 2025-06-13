@@ -1,0 +1,9 @@
+{
+  "pageTitle": "Admin Dashboard",
+  "stats": [
+    {"label": "Total Patients", "value": 0},
+    {"label": "Active Providers", "value": 0},
+    {"label": "Appointments Today", "value": 0}
+  ],
+  "recentActivity": []
+}

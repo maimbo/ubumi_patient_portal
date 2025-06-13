@@ -1,0 +1,9 @@
+{
+  "pageTitle": "User Profile",
+  "userDetails": {
+    "name": "",
+    "email": "",
+    "phone": "",
+    "address": ""
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "pageTitle": "Support",
+  "supportChannels": [
+    {
+      "type": "phone",
+      "label": "Helpline",
+      "value": "+260 XXX XXX XXX"
+    },
+    {
+      "type": "email",
+      "label": "Support Email",
+      "value": "support@patientportal.zm"
+    }
+  ],
+  "supportTickets": []
+}

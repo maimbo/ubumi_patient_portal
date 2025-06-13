@@ -1,0 +1,7 @@
+{
+  "pageTitle": "Login",
+  "formLabels": {
+    "email": "Email Address",
+    "password": "Password"
+  }
+}

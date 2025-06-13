@@ -1,0 +1,11 @@
+{
+  "pageTitle": "Settings",
+  "userPreferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "accountSettings": {
+    "changePasswordLink": "#",
+    "managePermissionsLink": "#"
+  }
+}
