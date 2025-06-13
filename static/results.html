@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Results - Healer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-md navbar-light bg-white border-bottom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
+                <i class="bi bi-heart-pulse-fill text-primary me-2"></i>
+                <span>Healer</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <form class="d-flex mx-auto" style="max-width: 400px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-end-0"><i class="bi bi-search"></i></span>
+                        <input type="search" class="form-control bg-light border-start-0" placeholder="Search" aria-label="Search">
+                    </div>
+                </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-bell"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3<span class="visually-hidden">unread messages</span></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><h6 class="dropdown-header">Notifications</h6></li>
+                            <li><a class="dropdown-item" href="#">New message from Dr. Smith</a></li>
+                            <li><a class="dropdown-item" href="#">Your appointment is confirmed</a></li>
+                            <li><a class="dropdown-item" href="#">Lab results available for Blood Test</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-center" href="#">View all notifications</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://ui-avatars.com/api/?name=Bwalya+Chisanga&background=random" class="rounded-circle me-2" alt="Steven Chiluba" width="30" height="30">
+                            <span>Bwalya Chisanga</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="profile.html"><i class="bi bi-person me-2"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="settings.html"><i class="bi bi-gear me-2"></i> Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-right me-2"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="dashboard.html"><i class="bi bi-house-door me-2"></i>Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="appointments.html"><i class="bi bi-calendar-event me-2"></i>Appointments</a></li>
+                        <li class="nav-item"><a class="nav-link" href="messages.html"><i class="bi bi-chat-dots me-2"></i>Messages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person-lines-fill me-2"></i>Contacts</a></li>
+                    </ul>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"><span>MEDICAL</span></h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="results.html"><i class="bi bi-file-earmark-text me-2"></i>Test Results</a></li>
+                        <li class="nav-item"><a class="nav-link" href="records.html"><i class="bi bi-journal-medical me-2"></i>Medical Records</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-capsule me-2"></i>Medications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-clipboard2-pulse me-2"></i>Care plans</a></li>
+                    </ul>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"><span>FINANCE</span></h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="billing.html"><i class="bi bi-credit-card me-2"></i>Billing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-clock-history me-2"></i>History</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-file-earmark-bar-graph me-2"></i>Reports</a></li>
+                    </ul>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"><span>SETTINGS</span></h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item"><a class="nav-link" href="profile.html"><i class="bi bi-person-circle me-2"></i>Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="settings.html"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-question-circle me-2"></i>Help/FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-headset me-2"></i>Support</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Test Results</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-light"><i class="bi bi-funnel me-1"></i> Filter</button>
+                            <button type="button" class="btn btn-sm btn-light"><i class="bi bi-sort-alpha-down me-1"></i> Sort</button>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-download me-1"></i> Download All
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col">Test Name</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Ordered By</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Full Blood Count (FBC)</strong><br>
+                                    <small class="text-muted">Hematology</small>
+                                </td>
+                                <td>March 10, 2024</td>
+                                <td><span class="badge bg-success">Available</span></td>
+                                <td>Dr. Kondwani Zulu</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary me-1" data-bs-toggle="modal" data-bs-target="#resultModal1"><i class="bi bi-eye-fill me-1"></i> View</button>
+                                    <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-download"></i> Download</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Lipid Panel</strong><br>
+                                    <small class="text-muted">Chemistry</small>
+                                </td>
+                                <td>March 05, 2024</td>
+                                <td><span class="badge bg-success">Available</span></td>
+                                <td>Dr. Bwalya Phiri</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary me-1" data-bs-toggle="modal" data-bs-target="#resultModal2"><i class="bi bi-eye-fill me-1"></i> View</button>
+                                    <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-download"></i> Download</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Urinalysis</strong><br>
+                                    <small class="text-muted">Microbiology</small>
+                                </td>
+                                <td>February 28, 2024</td>
+                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                <td>Dr. Monde Sikatana</td>
+                                <td>
+                                    <button class="btn btn-sm btn-light me-1" disabled><i class="bi bi-eye-slash me-1"></i> View</button>
+                                    <button class="btn btn-sm btn-outline-secondary" disabled><i class="bi bi-download"></i> Download</button>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    <strong>COVID-19 PCR Test</strong><br>
+                                    <small class="text-muted">Virology</small>
+                                </td>
+                                <td>February 15, 2024</td>
+                                <td><span class="badge bg-danger">Action Required</span></td>
+                                <td>Dr. Kondwani Zulu</td>
+                                <td>
+                                    <button class="btn btn-sm btn-danger me-1" data-bs-toggle="modal" data-bs-target="#resultModalCovid"><i class="bi bi-exclamation-triangle-fill me-1"></i> View</button>
+                                    <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-download"></i> Download</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Modal for FBC -->
+                <div class="modal fade" id="resultModal1" tabindex="-1" aria-labelledby="resultModal1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="resultModal1Label">Full Blood Count (FBC) - March 10, 2024</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Ordered By:</strong> Dr. Kondwani Zulu</p>
+                                <p><strong>Lab Reference:</strong> LAB-0012345</p>
+                                <hr>
+                                <h6 class="mt-3">Results:</h6>
+                                <table class="table table-sm table-bordered">
+                                    <thead>
+                                        <tr><th>Test</th><th>Result</th><th>Reference Range</th><th>Unit</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>Hemoglobin</td><td>14.5</td><td>13.5 - 17.5</td><td>g/dL</td></tr>
+                                        <tr><td>White Blood Cell Count</td><td>7.2</td><td>4.0 - 11.0</td><td>x10^9/L</td></tr>
+                                        <tr><td>Platelet Count</td><td>250</td><td>150 - 400</td><td>x10^9/L</td></tr>
+                                        <tr><td>Red Blood Cell Count</td><td>4.9</td><td>4.5 - 5.5</td><td>x10^12/L</td></tr>
+                                    </tbody>
+                                </table>
+                                <h6 class="mt-3">Doctor's Notes:</h6>
+                                <p class="text-muted">All results within normal limits. No immediate concerns.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary"><i class="bi bi-download me-1"></i> Download PDF</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Lipid Panel -->
+                <div class="modal fade" id="resultModal2" tabindex="-1" aria-labelledby="resultModal2Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="resultModal2Label">Lipid Panel - March 05, 2024</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Ordered By:</strong> Dr. Bwalya Phiri</p>
+                                <p><strong>Lab Reference:</strong> LAB-0012300</p>
+                                <hr>
+                                <h6 class="mt-3">Results:</h6>
+                                <table class="table table-sm table-bordered">
+                                    <thead>
+                                        <tr><th>Test</th><th>Result</th><th>Reference Range</th><th>Unit</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>Total Cholesterol</td><td>190</td><td>&lt;200</td><td>mg/dL</td></tr>
+                                        <tr><td>LDL Cholesterol</td><td>120</td><td>&lt;100 (Optimal)</td><td>mg/dL</td></tr>
+                                        <tr><td>HDL Cholesterol</td><td>50</td><td>&gt;40</td><td>mg/dL</td></tr>
+                                        <tr><td>Triglycerides</td><td>130</td><td>&lt;150</td><td>mg/dL</td></tr>
+                                    </tbody>
+                                </table>
+                                <h6 class="mt-3">Doctor's Notes:</h6>
+                                <p class="text-muted">LDL Cholesterol slightly elevated. Recommend dietary changes and follow-up in 3 months.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary"><i class="bi bi-download me-1"></i> Download PDF</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Modal for COVID-19 PCR Test -->
+                <div class="modal fade" id="resultModalCovid" tabindex="-1" aria-labelledby="resultModalCovidLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content border-danger">
+                            <div class="modal-header bg-danger text-white">
+                                <h5 class="modal-title" id="resultModalCovidLabel"><i class="bi bi-exclamation-triangle-fill me-2"></i>COVID-19 PCR Test - February 15, 2024</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Ordered By:</strong> Dr. Kondwani Zulu</p>
+                                <p><strong>Lab Reference:</strong> LAB-0011999</p>
+                                <hr>
+                                <h6 class="mt-3">Result:</h6>
+                                <div class="alert alert-danger">
+                                    <h4 class="alert-heading">POSITIVE for SARS-CoV-2</h4>
+                                    <p>The test detected genetic material from SARS-CoV-2, the virus that causes COVID-19.</p>
+                                </div>
+                                <h6 class="mt-3">Doctor's Notes:</h6>
+                                <p class="text-danger fw-bold">Please isolate immediately and follow public health guidelines. We will contact you shortly to discuss next steps and treatment options. If you experience severe symptoms such as difficulty breathing, seek emergency care.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary"><i class="bi bi-download me-1"></i> Download PDF</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
