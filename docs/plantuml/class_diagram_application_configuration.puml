@@ -1,0 +1,53 @@
+@startuml
+title Application Configuration Module - Class Diagram
+
+class AppList << (L,orchid) Lookup >> {
+    +id: INT << PK >>
+    +Category: VARCHAR(255)
+    +Value: VARCHAR(255)
+}
+
+class MedicalService << (S,lightblue) Service >> {
+    +id: INT << PK >>
+    +ServiceName: VARCHAR(255)
+    +Description: TEXT
+    +Category: VARCHAR(255)
+}
+
+class InsuranceProvider << (P,green) Provider >> {
+    +id: INT << PK >>
+    +ProviderName: VARCHAR(255)
+    +ContactPerson: VARCHAR(255)
+    +ContactEmail: VARCHAR(255)
+    +ContactPhone: VARCHAR(255)
+}
+
+class InsuranceProviderPlan << (P,green) Plan >> {
+    +id: INT << PK >>
+    +PlanName: VARCHAR(255)
+    +ProviderID: INT << FK >>
+    +CoverageDetails: TEXT
+}
+
+class MedicalInstitution << (I,orange) Institution >> {
+    +id: INT << PK >>
+    +InstitutionName: VARCHAR(255)
+    +Address: VARCHAR(255)
+    +ContactPerson: VARCHAR(255)
+    +ContactEmail: VARCHAR(255)
+    +ContactPhone: VARCHAR(255)
+    +InstitutionType: VARCHAR(255)
+}
+
+class MedicalInstitutionService << (IS,yellow) Association >> {
+    +id: INT << PK >>
+    +InstitutionID: INT << FK >>
+    +ServiceID: INT << FK >>
+    +Cost: DECIMAL(10,2)
+}
+
+InsuranceProvider "1" -- "*" InsuranceProviderPlan : has
+MedicalInstitution "1" -- "*" MedicalInstitutionService : offers
+MedicalService "1" -- "*" MedicalInstitutionService : is_offered_by
+
+@enduml

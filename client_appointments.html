@@ -32,7 +32,7 @@
                         <span class="input-group-text bg-light border-end-0">
                             <i class="bi bi-search"></i>
                         </span>
-                        <input type="search" class="form-control bg-light border-start-0" placeholder="Search" aria-label="Search">
+                        <input type="search" class="form-control bg-light border-start-0" placeholder="Search" aria-label="Search" style="display: none;">
                     </div>
                 </form>
                 
@@ -52,14 +52,13 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://via.placeholder.com/30" class="rounded-circle me-2" alt="User">
                             <span>Bwalya Chisanga</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                             <li><a class="dropdown-item" href="profile.html"><i class="bi bi-person me-2"></i> Profile</a></li>
                             <li><a class="dropdown-item" href="settings.html"><i class="bi bi-gear me-2"></i> Settings</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-right me-2"></i> Logout</a></li>
+                            <li><a class="dropdown-item" href="index.html"><i class="bi bi-box-arrow-right me-2"></i> Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -92,27 +91,9 @@
                     </h6>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="results.html">
-                                <i class="bi bi-file-earmark-text me-2"></i>
-                                Test Results
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="records.html">
+                            <a class="nav-link" href="client_records.html">
                                 <i class="bi bi-journal-medical me-2"></i>
                                 Medical Records
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="medications.html">
-                                <i class="bi bi-capsule me-2"></i>
-                                Medications
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="care-plans.html">
-                                <i class="bi bi-clipboard2-pulse me-2"></i>
-                                Care plans
                             </a>
                         </li>
                     </ul>
@@ -122,21 +103,9 @@
                     </h6>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="billing.html">
+                            <a class="nav-link" href="client_billing.html">
                                 <i class="bi bi-credit-card me-2"></i>
                                 Billing
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="history.html">
-                                <i class="bi bi-clock-history me-2"></i>
-                                History
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reports.html">
-                                <i class="bi bi-file-earmark-bar-graph me-2"></i>
-                                Reports
                             </a>
                         </li>
                     </ul>
@@ -192,12 +161,12 @@
                                         <h6 class="mb-1">Lusaka Central Hospital</h6>
                                         <p class="mb-1">General practice</p>
                                         <small class="text-muted">
-                                            <i class="bi bi-calendar me-1"></i> 17 July, 2025
+                                            <i class="bi bi-calendar me-1"></i> 24 July, 2025
                                             <i class="bi bi-clock ms-3 me-1"></i> 10:00 AM
                                             <i class="bi bi-geo-alt ms-3 me-1"></i> Plot 123, Independence Avenue, Lusaka
                                         </small>
                                     </div>
-                                    <div class="btn-group">
+                                    <div class="btn-group" style="display: none;">
                                         <button class="btn btn-warning text-dark btn-sm">
                                             <i class="bi bi-pencil me-1"></i> Request Reschedule
                                         </button>
@@ -226,7 +195,6 @@
                                         <th>Doctor</th>
                                         <th>Type</th>
                                         <th>Status</th>
-                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -236,9 +204,7 @@
                                         <td>Dr. Bwalya Phiri</td>
                                         <td>Follow-up</td>
                                         <td><span class="badge bg-success">Completed</span></td>
-                                        <td>
-                                            <button class="btn btn-sm btn-info text-white"><i class="bi bi-eye-fill me-1"></i>View Details</button>
-                                        </td>
+                                        
                                     </tr>
                                     <tr>
                                         <td>05 Mar, 2025</td>
@@ -246,9 +212,7 @@
                                         <td>Dr. Monde Sikatana</td>
                                         <td>General Check-up</td>
                                         <td><span class="badge bg-success">Completed</span></td>
-                                        <td>
-                                            <button class="btn btn-sm btn-info text-white"><i class="bi bi-eye-fill me-1"></i>View Details</button>
-                                        </td>
+                                        
                                     </tr>
                                 </tbody>
                             </table>

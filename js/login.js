@@ -67,6 +67,7 @@ class LoginService {
 
             // save loggedInUser in sessionStorage
             sessionStorage.setItem('loggedInUser', JSON.stringify(user));
+            localStorage.setItem('loggedInUser', JSON.stringify(user));
 
             // Return minimal user info
             return {

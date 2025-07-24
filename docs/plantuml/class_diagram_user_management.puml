@@ -1,0 +1,35 @@
+@startuml
+title User Management Module - Class Diagram
+
+class AppList {
+    +id: INT
+    +Category: VARCHAR(255)
+    +Value: VARCHAR(255)
+}
+
+class AppPrivilege {
+    +id: INT
+    +PrivilegeName: VARCHAR(255)
+    +Description: TEXT
+}
+
+class AppRole {
+    +id: INT
+    +RoleName: VARCHAR(255)
+    +Description: TEXT
+}
+
+class AppUser {
+    +id: INT
+    +Username: VARCHAR(255)
+    +PasswordHash: VARCHAR(255)
+    +Email: VARCHAR(255)
+    +RoleID: INT
+    +IsActive: BOOLEAN
+    +CreatedAt: DATETIME
+    +LastLogin: DATETIME
+}
+
+AppUser "1" -- "1" AppRole : has
+
+@enduml

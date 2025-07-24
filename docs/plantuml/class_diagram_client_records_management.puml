@@ -1,0 +1,62 @@
+@startuml
+!theme plain
+skinparam classAttributeIconSize 0
+
+title Class Diagram: Client Records Management Module
+
+entity Client {
+  + Id: INT << PK >>
+  + Reference: VARCHAR(50)
+  + UUID: VARCHAR(255)
+  --
+  + UserId: INT << FK >>
+  + Gender: VARCHAR(6)
+  + DateOfBirth: DATE
+  + IdentificationTypeId: INT << FK >>
+  + IdentificationNumber: VARCHAR(50)
+  + PhysicalAddress: TEXT
+  --
+  + DateCreated: DATETIME
+  + CreatedBy: VARCHAR(255)
+  + DateModified: DATETIME
+  + ModifiedBy: VARCHAR(255)
+}
+
+entity ClientInsurancePlan {
+  + Id: INT << PK >>
+  + Reference: VARCHAR(50)
+  + UUID: VARCHAR(255)
+  --
+  + ClientId: INT << FK >>
+  + PlanId: INT << FK >>
+  --
+  + DateCreated: DATETIME
+  + CreatedBy: VARCHAR(255)
+  + DateModified: DATETIME
+  + ModifiedBy: VARCHAR(255)
+}
+
+entity AppUser {
+  + Id: INT << PK >>
+  --
+  // ... other attributes ...
+}
+
+entity AppList {
+  + Id: INT << PK >>
+  --
+  // ... other attributes ...
+}
+
+entity InsuranceProviderPlan {
+  + Id: INT << PK >>
+  --
+  // ... other attributes ...
+}
+
+Client }-- AppUser : "UserId > Id"
+Client }-- AppList : "IdentificationTypeId > Id"
+ClientInsurancePlan }-- Client : "ClientId > Id"
+ClientInsurancePlan }-- InsuranceProviderPlan : "PlanId > Id"
+
+@enduml
