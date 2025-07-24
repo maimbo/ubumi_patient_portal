@@ -1,0 +1,18 @@
+
+# Abstract
+
+This research proposes the development of a National Centralised Patient Portal (NCPP) to serve as a unified digital platform for healthcare information access and service delivery. The implementation of a NCPP is a key milestone in the Ministry of Health’s drive to enhance patient-centered care across the country's healthcare ecosystem. The portal will integrate data from diverse healthcare providers—both public and private—to create a comprehensive, secure, and user-friendly interface where patients can access their complete medical history, track appointments, view test results, and actively engage with healthcare providers. The project implementation will involve - systematic requirements analysis, security-focused design, and user-centered development methodology, that aims to adequately address the current fragmentation in healthcare information systems, thereby empowering patients with greater control over their health information. The project aims to ensure that the portal meets stakeholders' needs while adhering to international best practices in health informatics and data protection. The NCPP stands to revolutionize healthcare delivery by improving coordination between providers, enhancing patient engagement, reducing administrative inefficiencies, and ultimately contributing to better health outcomes across the population.
+
+# Chapter 1: Introduction
+
+## 1.1 Background of Study
+
+Globally, healthcare systems are undergoing continual digital transformation to improve service delivery, enhance patient experiences, and optimize resource utilization. Primarily, Electronic Health Record(EHR) and Health Management Information systems are in the forefront of this constant transformation. The typical scenario is that various health providers use health information systems procured from different vendors of their choice. This results in each healthcare provider maintaining separate records of the same patients, leading to fragmentation, duplication, and inefficiencies in healthcare delivery.
+
+In response to these challenges, there has been an emergence of centralised patient portals, offering patients unified access to their health information. In their early stages, patient portals were usually implemented at institutional levels, covering a number of health institutions. Over time, patient portals have evolved towards broader integration and coverage, right to national levels. Countries like Estonia, Denmark, and Singapore have pioneered nationwide health information exchanges that allow patients to access their medical records across different healthcare providers through single digital platforms.
+
+In the Zambian context, the healthcare landscape consists of a diverse mix of public and private providers operating under the oversight of the Ministry of Health (MOH). While digitization efforts have been undertaken across various institutions, these implementations have largely progressed independently, resulting in heterogeneous systems with limited interoperability.
+
+The proposed NCCP would greatly enable the MOH, in executing its mandate as the central healthcare coordinator, by providing the Zambian citizenry and residents with a single unified patient portal that integrates information across all providers to facilitate comprehensive patient-centered care.
+
+This project aims to build upon the foundation Zambia’s Digital Health Strategy (2022-2026) that is focused on leveraging digital technologies to improve health outcomes, achieve Universal Health Coverage (UHC) and support broader sustainable development goals, particularly SDG 3.

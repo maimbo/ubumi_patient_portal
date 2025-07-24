@@ -1,1 +1,144 @@
-{"patients":[{"id":"patient001","username":"bwalya.chisanga","password":"health","email":"bwalya.chisanga@mail.com","nhima":"123456789"},{"id":"patient002","username":"mutale.mwanza","password":"health","email":"mutale.mwanza@example.com","nhima":"987654321"}],"providers":[{"id":"provider001","username":"dr.mulenga","password":"health","email":"dr.mulenga@hospital.org","providerId":"NHIMA-DR-A001"},{"id":"provider002","username":"dr.tembo","password":"health","email":"dr.tembo@clinic.com","providerId":"ZAMMSA-DR-B002"}]}
+{
+    "clients": [
+        {
+            "id": 1,
+            "nationalhealthId": "NAT-HEALTH-001",
+            "username": "bwalya.chisanga@client.com",
+            "password": "ubumi",
+            "personalDetails": {
+                "firstName": "Bwalya",
+                "lastName": "Chisanga",
+                "dateOfBirth": "1985-07-15",
+                "gender": "female",
+                "nationalId": "123456789",
+                "nhimaNumber": "NHIMA-123456789"
+            },
+            "contact": {
+                "email": "bwalya.chisanga@client.com",
+                "phone": "+260977123456",
+                "address": {
+                    "street": "456 Independence Avenue",
+                    "city": "Lusaka",
+                    "country": "Zambia"
+                }
+            },
+            "medicalProfile": {
+                "bloodType": "A+",
+                "knownAllergies": ["Penicillin"],
+                "chronicConditions": ["Hypertension"]
+            }
+        },
+        {
+            "id": 2,
+            "nationalhealthId": "NAT-HEALTH-002",
+            "username": "mutale.mwanza@client.com",
+            "password": "ubumi",
+            "personalDetails": {
+                "firstName": "Mutale",
+                "lastName": "Mwanza",
+                "dateOfBirth": "1990-11-22",
+                "gender": "male",
+                "nationalId": "987654321",
+                "nhimaNumber": "NHIMA-987654321"
+            },
+            "contact": {
+                "email": "mutale.mwanza@client.com",
+                "phone": "+260966789012",
+                "address": {
+                    "street": "789 Cairo Road",
+                    "city": "Lusaka",
+                    "country": "Zambia"
+                }
+            },
+            "medicalProfile": {
+                "bloodType": "O-",
+                "knownAllergies": [],
+                "chronicConditions": []
+            }
+        },
+        {
+            "id": 3,
+            "nationalhealthId": "NAT-HEALTH-003",
+            "username": "chanda.banda@client.com",
+            "password": "ubumi",
+            "personalDetails": {
+                "firstName": "Chanda",
+                "lastName": "Banda",
+                "dateOfBirth": "1988-05-17",
+                "gender": "female",
+                "nationalId": "456123789",
+                "nhimaNumber": "NHIMA-456123789"
+            },
+            "contact": {
+                "email": "chanda.banda@client.com",
+                "phone": "+260977654321",
+                "address": {
+                    "street": "23 Kafue Road",
+                    "city": "Kitwe",
+                    "country": "Zambia"
+                }
+            },
+            "medicalProfile": {
+                "bloodType": "B+",
+                "knownAllergies": ["Sulfa drugs"],
+                "chronicConditions": ["Asthma"]
+            }
+        }
+    ],
+    "practitioners": [
+        {
+            "id": 3,
+            "username": "dr.mulenga@hospital.org",
+            "password": "ubumi",
+            "professionalDetails": {
+                "firstName": "Chanda",
+                "lastName": "Mulenga",
+                "title": "Dr.",
+                "qualifications": ["MBChB", "MMed Internal Medicine"],
+                "specialty": "Internal Medicine",
+                "licenseNumber": "HPCZ-12345"
+            },
+            "contact": {
+                "email": "dr.mulenga@hospital.org",
+                "phone": "+260955111222",
+                "workplace": "University Teaching Hospital"
+            }
+        },
+        {
+            "id": 4,
+            "username": "dr.tembo@hospital.com",
+            "password": "ubumi",
+            "professionalDetails": {
+                "firstName": "Mwansa",
+                "lastName": "Tembo",
+                "title": "Dr.",
+                "qualifications": ["MBChB", "MMed Pediatrics"],
+                "specialty": "Pediatrics",
+                "licenseNumber": "HPCZ-54321"
+            },
+            "contact": {
+                "email": "dr.tembo@hospital.com",
+                "phone": "+260955333444",
+                "workplace": "Children's Health Clinic"
+            }
+        },
+        {
+            "id": 5,
+            "username": "dr.sikatana@hospital.com",
+            "password": "ubumi",
+            "professionalDetails": {
+                "firstName": "Monde",
+                "lastName": "Sikatana",
+                "title": "Dr.",
+                "qualifications": ["MBChB", "MMed Surgery"],
+                "specialty": "General Surgery",
+                "licenseNumber": "HPCZ-67890"
+            },
+            "contact": {
+                "email": "dr.sikatana@hospital.com",
+                "phone": "+260955555555",
+                "workplace": "Lusaka Surgical Center"
+            }
+        }
+    ]
+}

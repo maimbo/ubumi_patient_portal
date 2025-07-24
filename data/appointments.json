@@ -1,5 +1,57 @@
 {
   "pageTitle": "Appointments",
-  "upcomingAppointments": [],
-  "pastAppointments": []
+  "upcomingAppointments": [
+        {
+            "id": 1,
+            "patientId": 1,
+            "practitionerId": 3,
+            "serviceId": 1,
+            "date": "2025-07-20",
+            "time": "10:00",
+            "status": "Scheduled",
+            "notes": "Follow-up consultation."
+        },
+        {
+            "id": 2,
+            "patientId": 2,
+            "practitionerId": 4,
+            "serviceId": 13,
+            "date": "2025-07-21",
+            "time": "14:30",
+            "status": "Scheduled",
+            "notes": "Child wellness check."
+        },
+        {
+            "id": 4,
+            "patientId": 1,
+            "practitionerId": 3,
+            "serviceId": 2,
+            "date": "2025-07-25",
+            "time": "11:00",
+            "status": "Scheduled",
+            "notes": "Chronic disease management review."
+        },
+        {
+            "id": 5,
+            "patientId": 2,
+            "practitionerId": 4,
+            "serviceId": 8,
+            "date": "2025-07-26",
+            "time": "10:00",
+            "status": "Scheduled",
+            "notes": "Annual vaccination."
+        }
+  ],
+  "pastAppointments": [
+        {
+            "id": 3,
+            "patientId": 3,
+            "practitionerId": 5,
+            "serviceId": 11,
+            "date": "2025-07-22",
+            "time": "09:00",
+            "status": "Completed",
+            "notes": "Minor procedure completed."
+        }
+  ]
 }

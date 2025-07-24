@@ -1,0 +1,186 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "code": "GeneralConsultation",
+            "name": "General Consultation",
+            "description": "Basic medical consultation with a general practitioner",
+            "category": {
+                "id": 1,
+                "code": "Primary",
+                "name": "Primary Care"
+            },
+            "duration": 30,
+            "durationUnit": "minutes"
+        },
+        {
+            "id": 2,
+            "code": "ChronicDiseaseManagement",
+            "name": "Chronic Disease Management",
+            "description": "Ongoing care for conditions like diabetes, hypertension, etc.",
+            "category": {
+                "id": 1,
+                "code": "Primary",
+                "name": "Primary Care"
+            },
+            "duration": 45,
+            "durationUnit": "minutes"
+        },
+        {
+            "id": 3,
+            "code": "CardiologyConsultation",
+            "name": "Cardiology Consultation",
+            "description": "Heart health evaluation by a cardiologist",
+            "category": {
+                "id": 2,
+                "code": "Specialist",
+                "name": "Specialist Care"
+            },
+            "duration": 60,
+            "durationUnit": "minutes"
+        },
+        {
+            "id": 4,
+            "code": "DermatologyConsultation",
+            "name": "Dermatology Consultation",
+            "description": "Skin condition evaluation and treatment",
+            "category": {
+                "id": 2,
+                "code": "Specialist",
+                "name": "Specialist Care"
+            },
+            "duration": 30,
+            "durationUnit": "minutes"
+        },
+        {
+            "id": 5,
+            "code": "LabTests",
+            "name": "Lab Tests",
+            "description": "Collection and analysis of medical samples",
+            "category": {
+                "id": 3,
+                "code": "Diagnostics",
+                "name": "Diagnostics"
+            },
+            "duration": 15,
+            "durationUnit": "minutes"
+        },
+        {
+            "id": 6,
+            "code": "XRAY",
+            "name": "X-ray Imaging",
+            "description": "Radiological imaging for bone and some soft tissue evaluation",
+            "category": {
+                "id": 3,
+                "code": "Diagnostics",
+                "name": "Diagnostics"
+            },
+            "duration": 30,
+            "durationUnit": "minutes"
+        },
+        {
+            "id": 7,
+            "code": "EmergencyRoom",
+            "name": "Emergency Room Visit",
+            "description": "Immediate care for acute medical conditions",
+            "category": {
+                "id": 4,
+                "code": "Emergency",
+                "name": "Emergency Care"
+            },
+            "duration": 0,
+            "durationUnit": "varies"
+        },
+        {
+            "id": 8,
+            "code": "Vaccination",
+            "name": "Vaccination",
+            "description": "Administration of preventive immunizations",
+            "category": {
+                "id": 5,
+                "code": "Preventive",
+                "name": "Preventive Care"
+            },
+            "duration": 15,
+            "durationUnit": "minutes"
+        },
+        {
+            "id": 9,
+            "code": "HealthScreening",
+            "name": "Health Screening",
+            "description": "Comprehensive health check-up",
+            "category": {
+                "id": 5,
+                "code": "Preventive",
+                "name": "Preventive Care"
+            },
+            "duration": 90,
+            "durationUnit": "minutes"
+        },
+        {
+            "id": 10,
+            "code": "PsychotherapySession",
+            "name": "Psychotherapy Session",
+            "description": "Mental health counseling session",
+            "category": {
+                "id": 6,
+                "code": "Mental",
+                "name": "Mental Health"
+            },
+            "duration": 50,
+            "durationUnit": "minutes"
+        },
+        {
+            "id": 10,
+            "code": "PhysicalTherapy",
+            "name": "Physical Therapy",
+            "description": "Rehabilitation exercises and treatment",
+            "category": {
+                "id": 7,
+                "code": "Rehab",
+                "name": "Rehabilitation"
+            },
+            "duration": 45,
+            "durationUnit": "minutes"
+        },
+        {
+            "id": 11,
+            "code": "MinorSurgery",
+            "name": "Minor Surgical Procedure",
+            "description": "Outpatient surgical interventions",
+            "category": {
+                "id": 8,
+                "code": "Surgical",
+                "name": "Surgical Services"
+            },
+            "duration": 0,
+            "durationUnit": "varies"
+        },
+        {
+            "id": 12,
+            "code": "PrenatalCheckUp",
+            "name": "Prenatal Check-up",
+            "description": "Pregnancy monitoring and care",
+            "category": {
+                "id": 9,
+                "code": "Maternal",
+                "name": "Maternal Health"
+            },
+            "duration": 30,
+            "durationUnit": "minutes"
+        },
+        {
+            "id": 13,
+            "code": "ChildWellnessVisit",
+            "name": "Child Wellness Visit",
+            "description": "Routine health check for children",
+            "category": {
+                "id": 10,
+                "code": "Pediatric",
+                "name": "Pediatric Care"
+            },
+            "duration": 30,
+            "durationUnit": "minutes"
+        }
+    ]
+}

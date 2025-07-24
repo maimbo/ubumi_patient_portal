@@ -1,4 +1,134 @@
 {
-  "pageTitle": "Medical Records",
-  "records": []
+    "records": {
+        "medications": [
+            {
+                "name": "Amoxicillin",
+                "dosage": "250mg",
+                "frequency": "Three times a day",
+                "status": "Active",
+                "prescribedDate": "2023-01-10",
+                "prescribedBy": "Dr. Mulenga"
+            },
+            {
+                "name": "Paracetamol",
+                "dosage": "500mg",
+                "frequency": "As needed",
+                "status": "Inactive",
+                "prescribedDate": "2022-11-01",
+                "prescribedBy": "Dr. Tembo"
+            }
+        ],
+        "conditions": [
+            {
+                "name": "Hypertension",
+                "description": "High blood pressure",
+                "status": "Active",
+                "diagnosedDate": "2020-05-15",
+                "diagnosedBy": "Dr. Mulenga"
+            },
+            {
+                "name": "Seasonal Allergies",
+                "description": "Allergic rhinitis",
+                "status": "Active",
+                "diagnosedDate": "2021-03-20",
+                "diagnosedBy": "Dr. Sikatana"
+            }
+        ],
+        "vaccinations": [
+            {
+                "vaccine": "Tetanus",
+                "dose": "Booster",
+                "status": "Completed",
+                "dateAdministered": "2022-09-01",
+                "administeredBy": "Nurse Banda"
+            },
+            {
+                "vaccine": "Influenza",
+                "dose": "Annual",
+                "status": "Completed",
+                "dateAdministered": "2023-10-25",
+                "administeredBy": "Nurse Chanda"
+            }
+        ],
+        "allergies": [
+            {
+                "allergen": "Penicillin",
+                "reaction": "Rash, itching",
+                "severity": "Severe",
+                "firstObserved": "2015-03-10",
+                "status": "Active"
+            },
+            {
+                "allergen": "Dust Mites",
+                "reaction": "Sneezing, watery eyes",
+                "severity": "Moderate",
+                "firstObserved": "2018-07-01",
+                "status": "Active"
+            }
+        ],
+        "procedures": [
+            {
+                "name": "Appendectomy",
+                "reason": "Acute appendicitis",
+                "outcome": "Successful",
+                "date": "2019-08-20",
+                "performedBy": "Dr. Sikatana"
+            },
+            {
+                "name": "Dental Filling",
+                "reason": "Dental caries",
+                "outcome": "Successful",
+                "date": "2023-04-12",
+                "performedBy": "Dr. Phiri (Dentist)"
+            }
+        ],
+        "vitals": [
+            {
+                "date": "2024-01-15",
+                "time": "09:30",
+                "bloodPressure": "120/80 mmHg",
+                "heartRate": "72 bpm",
+                "temperature": "36.8",
+                "respiratoryRate": "16 breaths/min",
+                "oxygenSaturation": "98",
+                "recordedBy": "Nurse Banda"
+            },
+            {
+                "date": "2024-01-15",
+                "time": "14:00",
+                "bloodPressure": "125/82 mmHg",
+                "heartRate": "75 bpm",
+                "temperature": "37.1",
+                "respiratoryRate": "18 breaths/min",
+                "oxygenSaturation": "97",
+                "recordedBy": "Nurse Chanda"
+            }
+        ],
+        "labResults": [
+            {
+                "testName": "Complete Blood Count (CBC)",
+                "result": "Normal",
+                "status": "Normal",
+                "date": "2023-12-01",
+                "referenceRange": "Varies",
+                "orderedBy": "Dr. Mulenga"
+            },
+            {
+                "testName": "Blood Glucose",
+                "result": "95 mg/dL",
+                "status": "Normal",
+                "date": "2023-11-20",
+                "referenceRange": "70-100 mg/dL",
+                "orderedBy": "Dr. Tembo"
+            },
+            {
+                "testName": "Urinalysis",
+                "result": "Trace protein",
+                "status": "Abnormal",
+                "date": "2024-01-05",
+                "referenceRange": "Negative",
+                "orderedBy": "Dr. Mulenga"
+            }
+        ]
+    }
 }

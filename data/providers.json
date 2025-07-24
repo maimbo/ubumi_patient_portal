@@ -1,0 +1,486 @@
+{
+    "insurance": [
+        {
+            "id": 1,
+            "code": "NHIMA",
+            "name": "National Health Insurance Management Authority",
+            "address": {
+                "street": "123 Independence Avenue",
+                "city": "Lusaka",
+                "country": "Zambia",
+                "postalCode": "10101"
+            },
+            "contact": {
+                "phone": "+260 211 123456",
+                "email": "info@nhima.org.zm",
+                "website": "https://www.nhima.org.zm"
+            },
+            "plans": [
+                {
+                    "id": 1,
+                    "code": "Bronze",
+                    "name": "Bronze Plan",
+                    "coveragePercentage": 60,
+                    "features": [
+                        "Basic outpatient care",
+                        "Emergency services",
+                        "Routine medical check-ups",
+                        "Limited medication coverage"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "code": "Silver",
+                    "name": "Silver Plan",
+                    "coveragePercentage": 80,
+                    "features": [
+                        "All Bronze benefits",
+                        "Enhanced medication coverage",
+                        "Dental and vision care",
+                        "Specialist consultations"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "code": "Gold",
+                    "name": "Gold Plan",
+                    "coveragePercentage": 95,
+                    "features": [
+                        "All Silver benefits",
+                        "Comprehensive medication coverage",
+                        "Hospitalization coverage",
+                        "Maternity services",
+                        "Chronic condition management"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "code": "PRU",
+            "name": "Prudential Life Assurance Zambia",
+            "address": {
+                "street": "Stand 2374, Thabo Mbeki Road",
+                "city": "Lusaka",
+                "country": "Zambia"
+            },
+            "contact": {
+                "phone": "+260 211 372600",
+                "email": "info@prudential.co.zm",
+                "website": "https://www.prudential.co.zm"
+            },
+            "plans": [
+                {
+                    "id":4,
+                    "code": "Medland",
+                    "name": "Prudential Medland Health Plan",
+                    "coveragePercentage": 90,
+                    "features": [
+                        "Managed care services",
+                        "Fund administration",
+                        "Hospital coverage",
+                        "Specialist consultations"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "code": "HOL",
+            "name": "Hollard Zambia",
+            "address": {
+                "street": "Stand 2374, Thabo Mbeki Road",
+                "city": "Lusaka",
+                "country": "Zambia"
+            },
+            "contact": {
+                "phone": "+260 211 372600",
+                "email": "info@hollard.co.zm",
+                "website": "https://www.hollard.co.zm"
+            },
+            "plans": [
+                {
+                    "id":5,
+                    "code": "HollardHealth",
+                    "name": "Hollard Health",
+                    "coveragePercentage": 70,
+                    "features": [
+                        "Comprehensive coverage",
+                        "Hospitalization",
+                        "Chronic medication",
+                        "Preventive care"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "code": "LIB",
+            "name": "Liberty Health",
+            "address": {
+                "street": "Stand 2374, Thabo Mbeki Road",
+                "city": "Lusaka",
+                "country": "Zambia"
+            },
+            "contact": {
+                "phone": "+260 211 372600",
+                "email": "info@libertyhealth.co.zm",
+                "website": "https://www.libertyhealth.co.zm"
+            },
+            "plans": [
+                {
+                    "id":6,
+                    "code": "LibertyCover",
+                    "name": "Liberty Health Cover",
+                    "coveragePercentage": 90,
+                    "features": [
+                        "Individual plans",
+                        "Corporate solutions",
+                        "SME packages",
+                        "Comprehensive benefits"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "code": "MAD",
+            "name": "Madison Life Insurance",
+            "address": {
+                "street": "Stand 2374, Thabo Mbeki Road",
+                "city": "Lusaka",
+                "country": "Zambia"
+            },
+            "contact": {
+                "phone": "+260 211 372600",
+                "email": "info@madisonlife.co.zm",
+                "website": "https://www.madisonlife.co.zm"
+            },
+            "plans": [
+                {
+                    "id": 7,
+                    "code": "GroupHealth",
+                    "name": "Group Health Insurance",
+                    "coveragePercentage": 90,
+                    "features": [
+                        "Employer-sponsored coverage",
+                        "Family extensions",
+                        "Hospital benefits",
+                        "Chronic condition management"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "code": "SES",
+            "name": "SES International Health and Life Insurance",
+            "address": {
+                "street": "Stand 2374, Thabo Mbeki Road",
+                "city": "Lusaka",
+                "country": "Zambia"
+            },
+            "contact": {
+                "phone": "+260 211 372600",
+                "email": "info@seshealth.co.zm",
+                "website": "https://www.seshealth.co.zm"
+            },
+            "plans": [
+                {
+                    "id": 8,
+                    "code": "International",
+                    "name": "International Health Cover",
+                    "coveragePercentage": 70,
+                    "features": [
+                        "Global coverage",
+                        "Family plans",
+                        "Emergency evacuation",
+                        "Specialist networks"
+                    ]
+                }
+            ]
+        }
+    ],
+    "medical": [
+        {
+            "id": 1,
+            "code": "UTH",
+            "name": "University Teaching Hospitals",
+            "type": "Public",
+            "category": "Teaching",
+            "location": {
+                "city": "Lusaka",
+                "district": "Lusaka Central",
+                "address": "Nationalist Road"
+            },
+            "services": ["General", "Specialist", "Emergency"],
+            "beds": 2000
+        },
+        {
+            "id": 2,
+            "code": "LEVY",
+            "name": "Levy Mwanawasa Teaching Hospital",
+            "type": "Public",
+            "category": "Teaching Hospital",
+            "location": {
+                "city": "Lusaka",
+                "district": "Chilenje",
+                "address": "Off Kafue Road"
+            },
+            "services": ["General", "Specialist", "Emergency"],
+            "beds": 800
+        },
+        {
+            "id": 3,
+            "code": "ARTHUR",
+            "name": "Arthur Davison Children's Hospital",
+            "type": "Public",
+            "category": "Specialist",
+            "location": {
+                "city": "Ndola",
+                "district": "Central",
+                "address": "President Avenue"
+            },
+            "services": ["Pediatrics"],
+            "beds": 350
+        },
+        {
+            "id": 4,
+            "code": "CHIPGEN",
+            "name": "Chipata General Hospital",
+            "type": "Public",
+            "category": "General",
+            "location": {
+                "city": "Chipata",
+                "district": "Central",
+                "address": "Katopola Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 400
+        },
+        {
+            "id": 5,
+            "code": "LIVGEN",
+            "name": "Livingstone Central Hospital",
+            "type": "Public",
+            "category": "General Hospital",
+            "location": {
+                "city": "Livingstone",
+                "district": "Central",
+                "address": "Mosi-oa-Tunya Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 350
+        },
+        {
+            "id": 6,
+            "code": "KTH",
+            "name": "Kitwe Teaching Hospital",
+            "type": "Public",
+            "category": "Teaching",
+            "location": {
+                "city": "Kitwe",
+                "district": "Central",
+                "address": "Chimwemwe Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 500
+        },
+        {
+            "id": 7,
+            "code": "NDLTH",
+            "name": "Ndola Teaching Hospital",
+            "type": "Public",
+            "category": "General",
+            "location": {
+                "city": "Ndola",
+                "district": "Central",
+                "address": "Mutanda Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 600
+        },
+        {
+            "id": 8,
+            "code": "KBWGEN",
+            "name": "Kabwe General Hospital",
+            "type": "Public",
+            "category": "General",
+            "location": {
+                "city": "Kabwe",
+                "district": "Central",
+                "address": "Lukanga Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 350
+        },
+        {
+            "id": 9,
+            "code": "SOLGEN",
+            "name": "Solwezi General Hospital",
+            "type": "Public",
+            "category": "General",
+            "location": {
+                "city": "Solwezi",
+                "district": "Central",
+                "address": "Mushitala Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 300
+        },
+        {
+            "id": 10,
+            "code": "CHMGEN",
+            "name": "Choma General Hospital",
+            "type": "Public",
+            "category": "General",
+            "location": {
+                "city": "Choma",
+                "district": "Central",
+                "address": "Mapanza Avenue"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 250
+        },
+        {
+            "id": 11,
+            "code": "Medland",
+            "name": "Medland Hospital",
+            "type": "Private",
+            "category": "General",
+            "location": {
+                "city": "Lusaka",
+                "district": "Woodlands",
+                "address": "Great East Road"
+            },
+            "services": ["General", "Specialist", "Emergency"],
+            "beds": 150
+        },
+        {
+            "id": 12,
+            "code": "LTH",
+            "name": "Lusaka Trust Hospital",
+            "type": "Private",
+            "category": "General",
+            "location": {
+                "city": "Lusaka",
+                "district": "Roma",
+                "address": "Los Angeles Boulevard"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 120
+        },
+        {
+            "id": 13,
+            "code": "COP",
+            "name": "Coptic Hospital",
+            "type": "Private",
+            "category": "General",
+            "location": {
+                "city": "Lusaka",
+                "district": "Northmead",
+                "address": "Chachacha Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 100
+        },
+        {
+            "id": 14,
+            "code": "CURE",
+            "name": "Cure International Hospital",
+            "type": "Private",
+            "category": "Specialist",
+            "location": {
+                "city": "Lusaka",
+                "district": "Makeni",
+                "address": "Mumbwa Road"
+            },
+            "services": ["Orthopedics"],
+            "beds": 50
+        },
+        {
+            "id": 15,
+            "code": "LUBU",
+            "name": "Lubuto Mission Hospital",
+            "type": "Private",
+            "category": "General",
+            "location": {
+                "city": "Ndola",
+                "district": "Masala",
+                "address": "Kansenshi Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 200
+        },
+        {
+            "id": 16,
+            "code": "KBWMINE",
+            "name": "Kabwe Mine Hospital",
+            "type": "Private",
+            "category": "General",
+            "location": {
+                "city": "Kabwe",
+                "district": "Mine Township",
+                "address": "Mine Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 150
+        },
+        {
+            "id": 17,
+            "code": "CHINGEN",
+            "name": "Chingola General Hospital",
+            "type": "Private",
+            "category": "General",
+            "location": {
+                "city": "Chingola",
+                "district": "Central",
+                "address": "Chililabombwe Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 180
+        },
+        {
+            "id": 18,
+            "code": "MUFMINE",
+            "name": "Mufulira Mine Hospital",
+            "type": "Private",
+            "category": "General",
+            "location": {
+                "city": "Mufulira",
+                "district": "Mine Township",
+                "address": "Kankoyo Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 200
+        },
+        {
+            "id": 19,
+            "code": "CBUTCH",
+            "name": "Copperbelt University Teaching Hospital",
+            "type": "Public",
+            "category": "Teaching",
+            "location": {
+                "city": "Ndola",
+                "district": "Riverside",
+                "address": "Jambo Drive"
+            },
+            "services": ["General", "Specialist"],
+            "beds": 400
+        },
+        {
+            "id": 20,
+            "code": "CHIKANGEN",
+            "name": "Chikankata Mission Hospital",
+            "type": "Private",
+            "category": "General Hospital",
+            "location": {
+                "city": "Chikankata",
+                "district": "Mazabuka",
+                "address": "Great North Road"
+            },
+            "services": ["General", "Emergency"],
+            "beds": 250
+        }
+    ]
+}

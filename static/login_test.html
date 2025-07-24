@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal - Login Test</title>
+    <!-- Load Dexie from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/dexie@3.2.3/dist/dexie.min.js"></script>
+    <!-- Load our services -->
+    <script src="../js/indexed_db_data_service.js"></script>
+    <script src="../js/login.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        form { margin-bottom: 20px; }
+        input { display: block; margin: 10px 0; padding: 8px; width: 100%; box-sizing: border-box; }
+        button { padding: 10px 15px; background: #007bff; color: white; border: none; cursor: pointer; }
+        #result { margin-top: 20px; padding: 15px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Patient Portal Login Test</h1>
+    <p>Test users: test.patient/test123 or test.provider/test123</p>
+    
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        
+        <button type="submit">Login</button>
+    </form>
+    
+    <div id="result"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Initialize services
+            const loginService = await LoginService.getInstance();
+            const db = await PatientPortalDB.getInstance();
+
+            // Add test users if they don't exist
+            async function initializeTestData() {
+                const existingUser = await db.users.where('username').equals('test.patient').first();
+                if (!existingUser) {
+                    // Add test patient
+                    await db.users.add({
+                        username: 'test.patient',
+                        password: 'test123',
+                        email: 'patient@test.com',
+                        role: 'patient'
+                    });
+                    
+                    const patientUser = await db.users.where('username').equals('test.patient').first();
+                    
+                    await db.patients.add({
+                        user_id: patientUser.user_id,
+                        first_name: 'Test',
+                        last_name: 'Patient',
+                        date_of_birth: '1990-01-01',
+                        gender: 'female'
+                    });
+
+                    // Add test provider
+                    await db.users.add({
+                        username: 'test.provider',
+                        password: 'test123',
+                        email: 'provider@test.com',
+                        role: 'provider'
+                    });
+
+                    const providerUser = await db.users.where('username').equals('test.provider').first();
+                    
+                    await db.providers.add({
+                        user_id: providerUser.user_id,
+                        first_name: 'Test',
+                        last_name: 'Provider',
+                        specialty: 'General Practice'
+                    });
+                }
+            }
+
+            await initializeTestData();
+
+            // Handle form submission
+            document.getElementById('loginForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                
+                const result = await loginService.authenticate(username, password);
+                
+                const resultDiv = document.getElementById('result');
+                if (result.success) {
+                    resultDiv.innerHTML = `
+                        <h3>Login Successful!</h3>
+                        <p>Welcome ${result.user.first_name} ${result.user.last_name}</p>
+                        <p>Role: ${result.user.role}</p>
+                        ${result.user.specialty ? `<p>Specialty: ${result.user.specialty}</p>` : ''}
+                        <pre>${JSON.stringify(result.user, null, 2)}</pre>
+                    `;
+                    resultDiv.style.color = 'green';
+                } else {
+                    resultDiv.innerHTML = `
+                        <h3>Login Failed</h3>
+                        <p>${result.message}</p>
+                    `;
+                    resultDiv.style.color = 'red';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+{
+    "lists": [
+        {
+            "id": 1,
+            "type": "HealthServiceCategory",
+            "code": "Primary",
+            "name": "Primary Care",
+            "description": "Basic healthcare services including general consultations and chronic disease management",
+            "order": null
+        },
+        {
+            "id": 2,
+            "type": "HealthServiceCategory",
+            "code": "Specialist",
+            "name": "Specialist Care",
+            "description": "Specialized medical services provided by trained specialists",
+            "order": null
+        },
+        {
+            "id": 3,
+            "type": "HealthServiceCategory",
+            "code": "Diagnostics",
+            "name": "Diagnostics",
+            "description": "Tests and procedures to identify medical conditions",
+            "order": null
+        },
+        {
+            "id": 4,
+            "type": "HealthServiceCategory",
+            "code": "Emergency",
+            "name": "Emergency Care",
+            "description": "Immediate treatment for acute medical conditions",
+            "order": null
+        },
+        {
+            "id": 5,
+            "type": "HealthServiceCategory",
+            "code": "Preventive",
+            "name": "Preventive Care",
+            "description": "Services focused on disease prevention and health maintenance",
+            "order": null
+        },
+        {
+            "id": 6,
+            "type": "HealthServiceCategory",
+            "code": "Mental",
+            "name": "Mental Health",
+            "description": "Services for psychological and emotional well-being",
+            "order": null
+        },
+        {
+            "id": 7,
+            "type": "HealthServiceCategory",
+            "code": "Rehab",
+            "name": "Rehabilitation",
+            "description": "Therapies to restore function after illness or injury",
+            "order": null
+        },
+        {
+            "id": 8,
+            "type": "HealthServiceCategory",
+            "code": "Surgical",
+            "name": "Surgical Services",
+            "description": "Medical procedures involving operative techniques",
+            "order": null
+        },
+        {
+            "id": 9,
+            "type": "HealthServiceCategory",
+            "code": "Maternal",
+            "name": "Maternal Health",
+            "description": "Healthcare services for pregnancy and childbirth",
+            "order": null
+        },
+        {
+            "id": 10,
+            "type": "HealthServiceCategory",
+            "code": "Pediatric",
+            "name": "Pediatric Care",
+            "description": "Medical services specifically for children",
+            "order": null
+        }
+       
+     ]
+}
